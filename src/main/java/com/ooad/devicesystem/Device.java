@@ -1,5 +1,6 @@
 package com.ooad.devicesystem;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
@@ -8,7 +9,11 @@ import java.util.Collection;
 @Entity
 public class Device extends DomainObject{
     //todo deviceName 唯一
+
+    @Column(unique = true)
     private String name;
+
+
     private DeviceType type;
     private String typeSpecification;
     private Location location;

@@ -26,6 +26,14 @@ public class Example {
         return sessionFactory.getCurrentSession();
     }
 
+    public void initTestData3() throws Exception{
+        Device d1 = new Device("A0123", new DeviceType("Air Conditioner12"), "SHABI-0001", new Location("PVG-03"));
+        Device d2 = new Device("A0123", new DeviceType("Air Conditioner123"), "SHABI-0001", new Location("PVG-03"));
+
+        getCurrentSession().save(d1);
+//        getCurrentSession().save(d2);
+    }
+
     public void initTestData() throws Exception{
         Device d = new Device("A0123", new DeviceType("Air Conditioner"), "SHABI-0001", new Location("PVG-03"));
         MaintainPlan p1 = new MaintainPlan("type1", 60);
@@ -91,10 +99,11 @@ public class Example {
 
 
 //        initTest2Data();
-        int time = countDurationByType(65L, "type2");
-        int time2 = countDurationByDevice(65L);
-        log.info(time2 + "");
+//        int time = countDurationByType(65L, "type2");
+//        int time2 = countDurationByDevice(65L);
+//        log.info(time2 + "");
 
+        initTestData3();
     }
 
     public int countDurationByDevice(long deviceID){
