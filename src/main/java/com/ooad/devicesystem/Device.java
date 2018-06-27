@@ -1,72 +1,50 @@
 package com.ooad.devicesystem;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
 
 @Entity
-public class Device extends DomainObject{
-    //todo deviceName 唯一
+public class Device{
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int id;
 
-    @Column(unique = true)
-    private String name;
+    public int getId(){
+        return id;
+    }
 
-
-    private DeviceType type;
-    private String typeSpecification;
     private Location location;
 
-    @OneToMany(mappedBy = "device")
-    private Collection<MaintainPlan> plan = new ArrayList<MaintainPlan>();
+    @ManyToOne
+    private DeviceDescription description;
 
-    @OneToMany(mappedBy = "device")
-    private Collection<MaintainRecord> records = new ArrayList<>();
+    private ArrayList<MaintainPlan> plans = new ArrayList<>();
 
+    private ArrayList<MaintainRecord> records = new ArrayList<>();
 
-    public Device(){}
-    public Device(String name, DeviceType type, String typeSpecification, Location location){
-        this.name = name;
-        this.type = type;
-        this.typeSpecification = typeSpecification;
+    Device(Location location, DeviceDescription description){
         this.location = location;
+        this.description = description;
     }
 
-    public void addMaintainPlan(MaintainPlan p){
-        this.plan.add(p);
-        p.setDevice(this);
+    public void addPlan(MaintainPlan plan){
+        this.plans.add(plan);
     }
 
-    public void addMaintainRecord(MaintainRecord r){
-        this.records.add(r);
-        r.setDevice(this);
+    public void addRecord(MaintainRecord record){
+        this.records.add(record);
     }
 
-
-    public String getName() {
-        return name;
+    public void deletePlan(String type){
+        for (MaintainPlan p: plans){
+            if (p.getPlanType().equals(type)){
+                plans.remove(p);
+                return;
+            }
+        }
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public DeviceType getType() {
-        return type;
-    }
-
-    public void setType(DeviceType type) {
-        this.type = type;
-    }
-
-    public String getTypeSpecification() {
-        return typeSpecification;
-    }
-
-    public void setTypeSpecification(String typeSpecification) {
-        this.typeSpecification = typeSpecification;
-    }
 
     public Location getLocation() {
         return location;
@@ -76,11 +54,11 @@ public class Device extends DomainObject{
         this.location = location;
     }
 
-    public Collection<MaintainPlan> getMaintainPlan() {
-        return plan;
+    public DeviceDescription getDescription() {
+        return description;
     }
 
-    public Collection<MaintainRecord> getMaintainRecords(){
-        return records;
+    public void setDescription(DeviceDescription description) {
+        this.description = description;
     }
 }

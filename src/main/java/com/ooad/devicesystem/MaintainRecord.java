@@ -11,10 +11,6 @@ public class MaintainRecord extends DomainObject{
     private String record;
     private Person person;
     private int duration;
-    private String planType;
-
-    @ManyToOne
-    private Device device;
 
     MaintainRecord(){
 
@@ -25,15 +21,6 @@ public class MaintainRecord extends DomainObject{
         this.record = record;
         this.person = person;
         this.duration = duration;
-        this.planType = planType;
-    }
-
-    public Device getDevice() {
-        return device;
-    }
-
-    public void setDevice(Device device) {
-        this.device = device;
     }
 
     public Date getDate() {
@@ -68,11 +55,4 @@ public class MaintainRecord extends DomainObject{
         this.duration = duration;
     }
 
-    public String getPlanType() {
-        return planType;
-    }
-
-    public void setPlanType(String planType) {
-        this.planType = planType;
-    }
 }
