@@ -3,19 +3,19 @@ package com.ooad.devicesystem;
 import javax.persistence.*;
 
 @Entity
-public class PlanDescrption extends DomainObject{
+public class PlanDescription extends DomainObject{
 
     @Column(unique = true)
     private String planType;
     private int period;
 
-    PlanDescrption(){
+    PlanDescription(){
         this.planType = "";
         this.period = 10;
     }
 
 
-    PlanDescrption(String planType,int period){
+    PlanDescription(String planType, int period){
         this.planType=planType;
         this.period=period;
 

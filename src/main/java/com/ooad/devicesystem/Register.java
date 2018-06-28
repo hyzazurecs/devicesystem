@@ -1,9 +1,16 @@
 package com.ooad.devicesystem;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import java.util.ArrayList;
+import java.util.List;
 
-public class Register {
-    ArrayList<Device> devices=new ArrayList<>();
+@Entity
+public class Register extends DomainObject{
+
+    @OneToMany
+    private List<Device> devices=new ArrayList<>();
+
     Register(){
 
     }
@@ -18,7 +25,7 @@ public class Register {
         devices.remove(device);
     }
 
-    public ArrayList<Device> getDevices() {
+    public List<Device> getDevices() {
         return devices;
     }
 }

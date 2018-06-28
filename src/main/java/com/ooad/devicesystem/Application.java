@@ -58,8 +58,6 @@ public class Application {
         Properties properties = new Properties();
         properties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
         properties.put("hibernate.hbm2ddl.auto", "update");
-//        properties.put("hibernate.show_sql", true);
-//        properties.put("hibernate.format_sql", true);
 
         return properties;
     }
@@ -70,14 +68,6 @@ public class Application {
         HibernateTransactionManager transactionManager = new HibernateTransactionManager();
         transactionManager.setSessionFactory(sessionFactory().getObject());
         return transactionManager;
-    }
-
-
-    @Bean
-    public CommandLineRunner demo(Example example) {
-        return (args) -> {
-            example.demo();
-        };
     }
 
 }

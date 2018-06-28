@@ -31,7 +31,7 @@ public class Device{
         this.plans.add(plan);
     }
 
-    public void deletePlan(PlanDescrption pd){
+    public void deletePlan(PlanDescription pd){
         for (MaintainPlan p: plans){
             if (p.getPd().equals(pd)){
                 plans.remove(p);

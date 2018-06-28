@@ -8,7 +8,7 @@ import java.util.*;
 public class MaintainPlan extends DomainObject {
 
     @ManyToOne
-    private PlanDescrption pd;
+    private PlanDescription pd;
 
     @OneToMany
     private List<MaintainRecord> records = new ArrayList<>();
@@ -17,11 +17,11 @@ public class MaintainPlan extends DomainObject {
 
     }
 
-    public MaintainPlan(PlanDescrption pd) {
+    public MaintainPlan(PlanDescription pd) {
         this.pd = pd;
     }
 
-    public PlanDescrption getPd() {
+    public PlanDescription getPd() {
         return PlanDescriptionFactory.getPlanDescription(pd.getPlanType());
 
     }
@@ -30,7 +30,7 @@ public class MaintainPlan extends DomainObject {
         return this.records;
     }
 
-    public void setPd(PlanDescrption pd) {
+    public void setPd(PlanDescription pd) {
         this.pd = pd;
     }
 
@@ -72,8 +72,7 @@ public class MaintainPlan extends DomainObject {
 
     }
 
-    public Date getLastTime(){
-
+    private Date getLastTime(){
         if (records.size() == 0) return new Date();
 
         records.sort(new Comparator<MaintainRecord>() {
