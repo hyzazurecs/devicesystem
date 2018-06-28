@@ -4,22 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java" line="198" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9790d137-9b5e-4eaa-b536-557138157543" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ooad/devicesystem/DeviceManagementSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/addDeviceDescriptionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Example.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Example.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/MaintainPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/MaintainPlan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/MaintainRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/MaintainRecord.class" afterDir="false" />
-    </list>
+    <list default="true" id="9790d137-9b5e-4eaa-b536-557138157543" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -430,10 +415,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31079000" />
+    <option name="totallyTimeSpent" value="31242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -446,12 +431,12 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37103447" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2676617" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28836834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19009584" />
       <window_info anchor="right" id="Database" order="6" weight="0.37195995" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
