@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9790d137-9b5e-4eaa-b536-557138157543" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/PlanDescriptionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/PlanDescrption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceDescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceDescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DeviceType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DomainObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/DomainObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Location.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/PersistenceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/PersistenceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ooad/devicesystem/DeviceManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ooad/devicesystem/DeviceManagementSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Device.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/DeviceType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Example.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Example.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/MaintainPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/MaintainPlan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/MaintainRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ooad/devicesystem/MaintainRecord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ooad/devicesystem/DeviceManagementSystemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ooad/devicesystem/DeviceManagementSystemTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ooad/devicesystem/DeviceManagementSystemTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="602">
-              <caret line="109" column="54" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
+              <caret line="198" column="34" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +63,8 @@
       <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state>
+              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
               <folding>
                 <element signature="e#615#616#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
@@ -96,22 +76,17 @@
       <file leaf-file-name="Device.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Device.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="23" />
+            <state relative-caret-position="249">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#395#396#0" expanded="true" />
                 <element signature="e#420#421#0" expanded="true" />
                 <element signature="e#516#530#0" expanded="true" />
-                <element signature="e#606#622#0" expanded="true" />
                 <element signature="e#848#849#0" expanded="true" />
                 <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
                 <element signature="e#1146#1147#0" expanded="true" />
                 <element signature="e#1165#1166#0" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
-                <element signature="e#1302#1303#0" expanded="true" />
                 <element signature="e#2768#2769#0" expanded="true" />
                 <element signature="e#2799#2800#0" expanded="true" />
                 <element signature="e#2847#2848#0" expanded="true" />
@@ -125,24 +100,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlanDescrption.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/PlanDescrption.java">
+      <file leaf-file-name="MaintainPlan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="322">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
               <folding>
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaintainRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -184,11 +151,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/PlanDescriptionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Register.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainRecord.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/PlanDescrption.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Device.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ooad/devicesystem/DeviceManagementSystemTest.java" />
       </list>
     </option>
@@ -268,6 +235,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="devicesystem" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="devicesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="devicesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -310,14 +282,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DeviceManagementSystemTest.planTest">
+  <component name="RunManager" selected="JUnit.DeviceManagementSystemTest.getRecentTaskTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="DeviceManagementSystemTest.planAddTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DeviceManagementSystemTest.getRecentTaskTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="devicesystem" />
       <extension name="coverage">
         <pattern>
@@ -329,7 +301,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.ooad.devicesystem" />
       <option name="MAIN_CLASS_NAME" value="com.ooad.devicesystem.DeviceManagementSystemTest" />
-      <option name="METHOD_NAME" value="planAddTest" />
+      <option name="METHOD_NAME" value="getRecentTaskTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -433,19 +405,19 @@
       <patterns />
     </configuration>
     <list>
-      <item itemvalue="JUnit.DeviceManagementSystemTest.planAddTest" />
       <item itemvalue="JUnit.DeviceManagementSystemTest.planModifyTest" />
       <item itemvalue="JUnit.DeviceManagementSystemTest.planDeleteTest" />
       <item itemvalue="JUnit.DeviceManagementSystemTest.recordAddTest" />
       <item itemvalue="JUnit.DeviceManagementSystemTest.planTest" />
+      <item itemvalue="JUnit.DeviceManagementSystemTest.getRecentTaskTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DeviceManagementSystemTest.planTest" />
+        <item itemvalue="JUnit.DeviceManagementSystemTest.getRecentTaskTest" />
         <item itemvalue="JUnit.DeviceManagementSystemTest.recordAddTest" />
+        <item itemvalue="JUnit.DeviceManagementSystemTest.planTest" />
         <item itemvalue="JUnit.DeviceManagementSystemTest.planDeleteTest" />
         <item itemvalue="JUnit.DeviceManagementSystemTest.planModifyTest" />
-        <item itemvalue="JUnit.DeviceManagementSystemTest.planAddTest" />
       </list>
     </recent_temporary>
   </component>
@@ -461,44 +433,44 @@
       <updated>1529735590433</updated>
       <workItem from="1529735594109" duration="22572000" />
       <workItem from="1529997270269" duration="678000" />
-      <workItem from="1530158845484" duration="10253000" />
+      <workItem from="1530158845484" duration="17746000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DeviceManagementSystemTest_planTest - 2018.06.28 at 13h 54m 36s.xml">
-      <configuration name="DeviceManagementSystemTest.planTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 17h 12m 47s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planTest - 2018.06.28 at 13h 58m 19s.xml">
-      <configuration name="DeviceManagementSystemTest.planTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 17h 14m 08s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planTest - 2018.06.28 at 13h 58m 44s.xml">
-      <configuration name="DeviceManagementSystemTest.planTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 17h 15m 00s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planTest - 2018.06.28 at 13h 59m 15s.xml">
-      <configuration name="DeviceManagementSystemTest.planTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 17h 15m 36s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planTest - 2018.06.28 at 13h 59m 37s.xml">
-      <configuration name="DeviceManagementSystemTest.planTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 17h 53m 14s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planTest - 2018.06.28 at 14h 02m 46s.xml">
-      <configuration name="DeviceManagementSystemTest.planTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 17h 56m 47s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planAddTest - 2018.06.28 at 14h 49m 12s.xml">
-      <configuration name="DeviceManagementSystemTest.planAddTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 17h 57m 05s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planAddTest - 2018.06.28 at 14h 51m 20s.xml">
-      <configuration name="DeviceManagementSystemTest.planAddTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 18h 00m 45s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planModifyTest - 2018.06.28 at 14h 51m 28s.xml">
-      <configuration name="DeviceManagementSystemTest.planModifyTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 18h 01m 28s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DeviceManagementSystemTest_planDeleteTest - 2018.06.28 at 14h 55m 07s.xml">
-      <configuration name="DeviceManagementSystemTest.planDeleteTest" configurationId="JUnit" />
+    <history-entry file="DeviceManagementSystemTest_getRecentTaskTest - 2018.06.28 at 18h 03m 13s.xml">
+      <configuration name="DeviceManagementSystemTest.getRecentTaskTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41495000" />
+    <option name="totallyTimeSpent" value="48988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -513,13 +485,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32636815" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32636815" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28647497" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28647497" />
       <window_info anchor="right" id="Database" order="6" weight="0.37195995" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935324" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -852,31 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/PlanDescrption.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -895,24 +842,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/MaintainPlan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ooad/devicesystem/Device.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="23" />
+        <state relative-caret-position="249">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#395#396#0" expanded="true" />
             <element signature="e#420#421#0" expanded="true" />
             <element signature="e#516#530#0" expanded="true" />
-            <element signature="e#606#622#0" expanded="true" />
             <element signature="e#848#849#0" expanded="true" />
             <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
             <element signature="e#1146#1147#0" expanded="true" />
             <element signature="e#1165#1166#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
             <element signature="e#2768#2769#0" expanded="true" />
             <element signature="e#2799#2800#0" expanded="true" />
             <element signature="e#2847#2848#0" expanded="true" />
@@ -928,7 +893,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ooad/devicesystem/DeviceManagementSystemTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
-          <caret line="109" column="54" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
+          <caret line="198" column="34" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
