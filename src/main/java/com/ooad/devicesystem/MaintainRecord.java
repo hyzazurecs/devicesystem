@@ -6,21 +6,24 @@ import javax.persistence.ManyToOne;
 import java.util.Date;
 
 @Entity
-public class MaintainRecord extends DomainObject{
+public class MaintainRecord extends DomainObject {
     private Date date;
     private String record;
     private Person person;
     private int duration;
+    private String planType;
 
-    MaintainRecord(){
+    MaintainRecord() {
 
     }
 
-    MaintainRecord(Date date, String record, Person person, int duration, String planType){
+
+    MaintainRecord(Date date, String record, Person person, int duration, String planType) {
         this.date = date;
         this.record = record;
         this.person = person;
         this.duration = duration;
+        this.planType = planType;
     }
 
     public Date getDate() {
@@ -53,6 +56,14 @@ public class MaintainRecord extends DomainObject{
 
     public void setDuration(int duration) {
         this.duration = duration;
+    }
+
+    public String getPlanType() {
+        return planType;
+    }
+
+    public void setPlanType(String planType) {
+        this.planType = planType;
     }
 
 }

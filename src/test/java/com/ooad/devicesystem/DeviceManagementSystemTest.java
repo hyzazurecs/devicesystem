@@ -3,9 +3,12 @@ package com.ooad.devicesystem;
 import static org.junit.Assert.*;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -16,73 +19,113 @@ import org.springframework.transaction.annotation.Transactional;
 @SpringBootTest(classes = Application.class)
 @Transactional
 public class DeviceManagementSystemTest {
+    private static final Logger log = LoggerFactory.getLogger(Example.class);
 
     @Autowired
     private PersistenceManager pm;
 
-    void assertObjectPersisted(DomainObject domainObject){
-        assertNotNull(domainObject.getId());
+    @Test
+    public void planTest(){
+        PlanDescrption pd=new PlanDescrption("Test",100);
+        pm.getCurrentSession().save(pd);
+        PlanDescriptionFactory.makePlan(pd);
+
+        MaintainPlan plan = new MaintainPlan(PlanDescriptionFactory.getPlanDescription("Test"));
+        pm.getCurrentSession().save(plan);
+
+        MaintainPlan plan1 = pm.getCurrentSession().get(MaintainPlan.class, plan.getId());
+
+        assertEquals(plan, plan1);
     }
 
     @Test
-    public void createDescriptionTest(){
-        DeviceDescription d = new DeviceDescription("AUX","AUX-01","AUX-OOAD-01");
+    public void planModifyTest(){
+        PlanDescrption pd=new PlanDescrption("TypeTest",100);
+        pm.getCurrentSession().save(pd);
+        PlanDescriptionFactory.makePlan(pd);
+        PlanDescriptionFactory.makePlan("TypeTest",50);
+        MaintainPlan plan = new MaintainPlan(PlanDescriptionFactory.getPlanDescription("TypeTest"));
+        pm.getCurrentSession().save(plan);
 
-        pm.getCurrentSession().save(d);
-        DeviceDescription d2 = pm.getCurrentSession().get(DeviceDescription.class, d.getId());
-        assertEquals(d,d2);
+        assertEquals(plan.getPd().getPeriod(), 50);
+
     }
 
-//    @Test
-//    public void removeDescriotion
+    @Test
+    public void planAddTest(){
+        PlanDescrption pd=new PlanDescrption("TypeTest",100);
+        pm.getCurrentSession().save(pd);
+        PlanDescriptionFactory.makePlan(pd);
+        MaintainPlan plan = new MaintainPlan(PlanDescriptionFactory.getPlanDescription("TypeTest"));
+        pm.getCurrentSession().save(plan);
+        DeviceDescription dd1 = new DeviceDescription("test02","TT1","AUX-01");
 
-//
-//    @Test
-//    public void searchTeacherByHQLTest(){
-//        Teacher t = new Teacher("name");
-//        t.setBirthday(new Date(0,11,11));
-//        t.getAddress().setPostCode("200433");
-//        pm.getCurrentSession().save(t);
-//
-//        String hql = "from Teacher t where t.address.postCode = '200433'";
-//        assertEquals(1,pm.getCurrentSession().createQuery(hql).list().size());
-//    }
-//    @Test
-//    public void createCourseTest(){
-//        NormalCourse nc = new NormalCourse();
-//        nc.setName("normal course");
-//        nc.setClassRoom("2204");
-//        pm.getCurrentSession().save(nc);
-//
-//        OnlineCourse oc = new OnlineCourse();
-//        oc.setName("online course");
-//        oc.setUrl("http://just.test");
-//        pm.getCurrentSession().save(oc);
-//
-//        String normalCourseFinder = "from NormalCourse t";
-//        NormalCourse resultnc = (NormalCourse)pm.getCurrentSession().createQuery(normalCourseFinder).uniqueResult();
-//        assertEquals(nc,resultnc);
-//
-//        String courseFinder = "from Course c";
-//        assertEquals(2,pm.getCurrentSession().createQuery(courseFinder).list().size());
-//    }
-//
-//    @Test
-//    public void associationTest(){
-//        Teacher t = new Teacher("name");
-//        t.setBirthday(new Date(0,11,11));
-//        t.getAddress().setPostCode("200433");
-//        pm.getCurrentSession().save(t);
-//
-//        NormalCourse nc = new NormalCourse();
-//        nc.setName("normal course");
-//        nc.setClassRoom("2204");
-//        pm.getCurrentSession().save(nc);
-//
-//        t.addCourse(nc);
-//
-//        String hql = "from Course c where c.teacher.name = 'name'";
-//        assertEquals(nc, pm.getCurrentSession().createQuery(hql).uniqueResult());
-//
-//    }
+        pm.getCurrentSession().save(dd1);
+
+        Device d = new Device("here", dd1);
+        d.addPlan(plan);
+
+        pm.getCurrentSession().save(d);
+
+        Device d2 = pm.getCurrentSession().get(Device.class, d.getId());
+
+        assertEquals(d.getPlans(), d2.getPlans());
+
+    }
+
+    @Test
+    public void planDeleteTest(){
+        PlanDescrption pd=new PlanDescrption("TypeTest",100);
+        pm.getCurrentSession().save(pd);
+        PlanDescriptionFactory.makePlan(pd);
+        MaintainPlan plan = new MaintainPlan(PlanDescriptionFactory.getPlanDescription("TypeTest"));
+        pm.getCurrentSession().save(plan);
+        DeviceDescription dd1 = new DeviceDescription("test02","TT1","AUX-01");
+
+        pm.getCurrentSession().save(dd1);
+
+        Device d = new Device("here", dd1);
+        d.addPlan(plan);
+
+        pm.getCurrentSession().save(d);
+
+        Device d2 = pm.getCurrentSession().get(Device.class, d.getId());
+
+        d2.deletePlan(d2.getPlans().get(0).getPd());
+        pm.getCurrentSession().save(d2);
+
+        Device d3 = pm.getCurrentSession().get(Device.class, d2.getId());
+
+        assertEquals(d3.getPlans().size(),0);
+    }
+
+    @Test
+    public void recordAddTest(){
+        PlanDescrption pd=new PlanDescrption("TypeTest",100);
+        pm.getCurrentSession().save(pd);
+        PlanDescriptionFactory.makePlan(pd);
+        MaintainPlan plan = new MaintainPlan(PlanDescriptionFactory.getPlanDescription("TypeTest"));
+        pm.getCurrentSession().save(plan);
+        DeviceDescription dd1 = new DeviceDescription("test02","TT1","AUX-01");
+
+        pm.getCurrentSession().save(dd1);
+
+        Device d = new Device("here", dd1);
+        d.addPlan(plan);
+
+        MaintainRecord r = new MaintainRecord(new Date(), "AAA", new Person("Andrew"), 90, "TypeTest");
+        d.addRecord(r);
+        pm.getCurrentSession().save(r);
+
+        pm.getCurrentSession().save(d);
+
+        Device d2 = pm.getCurrentSession().get(Device.class, d.getId());
+
+        assertEquals(d2.getRecords(), d.getRecords());
+    }
+
+
+
+
+
 }

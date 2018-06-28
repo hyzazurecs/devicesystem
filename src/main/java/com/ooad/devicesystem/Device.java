@@ -1,8 +1,12 @@
 package com.ooad.devicesystem;
 
+import com.sun.prism.impl.Disposer;
+import sun.applet.Main;
+
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Collection;
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Entity
 public class Device{
@@ -14,16 +18,18 @@ public class Device{
         return id;
     }
 
-    private Location location;
+    private String location;
 
     @ManyToOne
     private DeviceDescription description;
 
-    private ArrayList<MaintainPlan> plans = new ArrayList<>();
+    @OneToMany
+    private List<MaintainPlan> plans = new ArrayList<MaintainPlan>();
 
-    private ArrayList<MaintainRecord> records = new ArrayList<>();
+    @OneToMany
+    private List<MaintainRecord> records = new ArrayList<MaintainRecord>();
 
-    Device(Location location, DeviceDescription description){
+    Device(String location, DeviceDescription description){
         this.location = location;
         this.description = description;
     }
@@ -36,21 +42,82 @@ public class Device{
         this.records.add(record);
     }
 
-    public void deletePlan(String type){
+    public void deletePlan(PlanDescrption pd){
         for (MaintainPlan p: plans){
-            if (p.getPlanType().equals(type)){
+            if (p.getPd().equals(pd)){
                 plans.remove(p);
                 return;
             }
         }
     }
 
+    public List<MaintainPlan> getPlans(){
+        return this.plans;
+    }
 
-    public Location getLocation() {
+    public List<MaintainRecord> getRecords() {
+        return records;
+    }
+
+    //    public ArrayList<Task> getRecentTask(int time){
+//        ArrayList<Task> tasks=new ArrayList<>();
+//        for(MaintainPlan plan : plans){
+//
+//            Date date1 =addTime(getLastTime(plan),time);
+//            Date current =new Date();
+//            Date date2 =addTime(current,time);
+//            if (!date1.before(current) &&!date1.after(date2)){
+//                tasks.add(new Task(plan.getPlanType(),date1));
+//            }
+//
+//        }
+//        return tasks;
+//    }
+//    public int getTotalMaintainTime(){
+//        int time =0;
+//        for(MaintainPlan plan :plans) {
+//
+//            time+=plan.getMaintainTIme();
+//        }
+//
+//        return time;
+//    }
+//
+//    public int getTypeMaintainTIme(MaintainPlan plan){
+//        int time=0;
+//        for(MaintainRecord record:records){
+//            if(record.getPlanType()==plan.getPlanType()){
+//                time+=record.getDuration();
+//            }
+//        }
+//        return time;
+//    }
+//    private Date addTime(Date date ,int time){
+//        Calendar c =Calendar.getInstance();
+//        c.setTime(date);
+//        c.add(Calendar.DAY_OF_MONTH,time);
+//        return c.getTime();
+//
+//    }
+//
+//    private Date getLastTime(MaintainPlan plan){
+//        Date date =addTime(new Date(),-plan.getPeriod());
+//        for(MaintainRecord record: records){
+//            if(record.getPlanType()==plan.getPlanType()&& date.before(record.getDate())){
+//                date=record.getDate();
+//            }
+//        }
+//
+//        return date;
+//    }
+
+
+
+    public String getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 
